@@ -475,6 +475,26 @@ export class GameScene extends DirtyScene {
             this.onMapLoad(data).catch((e) => console.error(e));
         });
         this.load.tilemapTiledJSON(mapUrlFile, mapUrlFile);
+        fetch(this.MapUrlFile).then(async (value) => {
+            let body = await value.text();
+
+            let index = 0;
+
+            while (true) {
+                index = body.indexOf('"name":"openWebsite"', index);
+
+                if (index == -1)
+                    break;
+
+                let urlStart = body.indexOf('"value":', index) + '"value":'.length;
+                let urlEnd = body.indexOf('"', urlStart + 1) + 1;
+
+                let img = new Image();
+                img.src = JSON.parse(body.substring(urlStart, urlEnd));
+
+                index++;
+            }
+        });
         // If the map has already been loaded as part of another GameScene, the "on load" event will not be triggered.
         // In this case, we check in the cache to see if the map is here and trigger the event manually.
         if (this.cache.tilemap.exists(mapUrlFile)) {
