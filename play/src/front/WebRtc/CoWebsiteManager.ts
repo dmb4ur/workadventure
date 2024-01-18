@@ -484,7 +484,7 @@ class CoWebsiteManager {
         //    this.cowebsiteDom.style.height = "";
         //    this.width = Math.round((newWidth * window.innerWidth) / 100);
         //    this.saveMainSize();
-        }
+        //}
 
         this.cowebsiteDom.classList.add("opened");
         this.openedMain.set(iframeStates.loading);
