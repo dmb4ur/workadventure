@@ -11,10 +11,10 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 444, 444, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -80,12 +80,6 @@
          "id":29,
          "name":"jitsiMeetingRoom",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"jitsiRoom",
-                 "type":"string",
-                 "value":"MeetingRoom"
-                }],
          "type":"tilelayer",
          "visible":true,
          "width":31,
@@ -283,32 +277,174 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "class":"",
-                 "height":64,
-                 "id":4,
-                 "name":"clockPopup",
-                 "rotation":0,
-                 "visible":true,
-                 "width":128,
-                 "x":512,
-                 "y":0
-                }, 
-                {
                  "class":"area",
-                 "height":416,
-                 "id":9,
-                 "name":"liveZone",
+                 "height":66,
+                 "id":12,
+                 "name":"",
                  "properties":[
                         {
-                         "name":"chatName",
+                         "name":"openWebsite",
                          "type":"string",
-                         "value":"liveZone"
+                         "value":"https:\/\/raeolu.github.io\/pages\/cat-png-17.png.html "
                         }],
                  "rotation":0,
                  "visible":true,
-                 "width":224,
-                 "x":736,
-                 "y":32
+                 "width":125,
+                 "x":68,
+                 "y":93
+                }, 
+                {
+                 "class":"area",
+                 "height":149,
+                 "id":13,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/cat-png-17.png.html "
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":54,
+                 "x":37,
+                 "y":259
+                }, 
+                {
+                 "class":"area",
+                 "height":65,
+                 "id":14,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/z1fmxo00_400x400.jpg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":123,
+                 "x":324,
+                 "y":117
+                }, 
+                {
+                 "class":"area",
+                 "height":74,
+                 "id":15,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/t_pzvyZZ_400x400.jpg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":130,
+                 "x":513,
+                 "y":117
+                }, 
+                {
+                 "class":"area",
+                 "height":125,
+                 "id":16,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/index.jpeg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":62,
+                 "x":382,
+                 "y":300
+                }, 
+                {
+                 "class":"area",
+                 "height":124,
+                 "id":17,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/communityIcon_lqalsz65mlf51.jpg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":64,
+                 "x":512,
+                 "y":307
+                }, 
+                {
+                 "class":"area",
+                 "height":57,
+                 "id":18,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/cat1589.jpg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":141,
+                 "x":795,
+                 "y":323
+                }, 
+                {
+                 "class":"area",
+                 "height":46,
+                 "id":19,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/cat-png-17.png.html "
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":124,
+                 "x":804,
+                 "y":217
+                }, 
+                {
+                 "class":"area",
+                 "height":105,
+                 "id":20,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/cat1589.jpg.html"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":104,
+                 "x":792,
+                 "y":53
+                }, 
+                {
+                 "class":"area",
+                 "height":78,
+                 "id":21,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/raeolu.github.io\/pages\/Thinking-of-getting-a-cat.png.html "
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":83,
+                 "x":620,
+                 "y":366
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -401,7 +537,7 @@
          "y":0
         }],
  "nextlayerid":39,
- "nextobjectid":10,
+ "nextobjectid":22,
  "orientation":"orthogonal",
  "properties":[
         {
