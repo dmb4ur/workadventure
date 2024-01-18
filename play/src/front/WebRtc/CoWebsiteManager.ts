@@ -378,14 +378,14 @@ class CoWebsiteManager {
     }
 
     private closeMain(): void {
-        this.toggleFullScreenIcon(true);
-        this.cowebsiteDom.classList.add("closing");
-        this.cowebsiteDom.classList.remove("opened");
-        this.openedMain.set(iframeStates.closed);
-        this.cowebsiteDom.style.height = "";
-        this.cowebsiteDom.style.width = "";
-        this.coWebsiteResizeSize = 50;
-        this.fire();
+        //this.toggleFullScreenIcon(true);
+        //this.cowebsiteDom.classList.add("closing");
+        //this.cowebsiteDom.classList.remove("opened");
+        //this.openedMain.set(iframeStates.closed);
+        //this.cowebsiteDom.style.height = "";
+        //this.cowebsiteDom.style.width = "";
+        //this.coWebsiteResizeSize = 50;
+        //this.fire();
     }
 
     private activateMainLoaderAnimation() {
@@ -454,35 +454,36 @@ class CoWebsiteManager {
     private loadMain(openingWidth?: number): void {
         this.activateMainLoaderAnimation();
 
-        let newWidth = openingWidth ?? 50;
+        this.width = this.width < Math.round(0.2 * window.innerWidth) ? Math.round(0.5 * window.innerWidth) : this.width;
+        //let newWidth = openingWidth ?? 50;
 
-        if (newWidth > 75 && !this.isFullScreen) {
-            this.coWebsiteResizeSize = 75;
-            this.toggleFullscreen();
-        } else if (this.verticalMode) {
-            const holderPercent = Math.round((this.cowebsiteAsideHolderDom.offsetHeight * 100) / window.innerHeight);
+        //if (newWidth > 75 && !this.isFullScreen) {
+        //    this.coWebsiteResizeSize = 75;
+        //    this.toggleFullscreen();
+        //} else if (this.verticalMode) {
+        //    const holderPercent = Math.round((this.cowebsiteAsideHolderDom.offsetHeight * 100) / window.innerHeight);
 
-            if (newWidth < holderPercent) {
-                newWidth = holderPercent;
-            } else if (newWidth > this.maxWidth) {
-                newWidth = 100;
-            }
+        //    if (newWidth < holderPercent) {
+        //        newWidth = holderPercent;
+        //   } else if (newWidth > this.maxWidth) {
+        //        newWidth = 100;
+        //    }
 
-            this.cowebsiteDom.style.width = "";
-            this.height = Math.round((newWidth * window.innerHeight) / 100);
-            this.saveMainSize();
-        } else {
-            const holderPercent = Math.round((this.cowebsiteAsideHolderDom.offsetWidth * 100) / window.innerWidth);
+        //    this.cowebsiteDom.style.width = "";
+        //    this.height = Math.round((newWidth * window.innerHeight) / 100);
+        //    this.saveMainSize();
+        //} else {
+        //    const holderPercent = Math.round((this.cowebsiteAsideHolderDom.offsetWidth * 100) / window.innerWidth);
 
-            if (newWidth < holderPercent) {
-                newWidth = holderPercent;
-            } else if (newWidth > this.maxWidth) {
-                newWidth = 100;
-            }
+        //    if (newWidth < holderPercent) {
+        //        newWidth = holderPercent;
+        //    } else if (newWidth > this.maxWidth) {
+        //        newWidth = 100;
+        //    }
 
-            this.cowebsiteDom.style.height = "";
-            this.width = Math.round((newWidth * window.innerWidth) / 100);
-            this.saveMainSize();
+        //    this.cowebsiteDom.style.height = "";
+        //    this.width = Math.round((newWidth * window.innerWidth) / 100);
+        //    this.saveMainSize();
         }
 
         this.cowebsiteDom.classList.add("opened");
@@ -767,7 +768,7 @@ class CoWebsiteManager {
             this.goToMain(mainCoWebsite);
             this.resizeAllIframes();
         } else {
-            this.closeMain();
+          //  this.closeMain();
         }
     }
 
