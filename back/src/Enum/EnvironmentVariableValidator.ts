@@ -10,8 +10,8 @@ import {
 
 export const EnvironmentVariables = z.object({
     PLAY_URL: z.string().url(),
-    MINIMUM_DISTANCE: PositiveIntAsString.optional().transform((val) => toNumber(val, 64)),
-    GROUP_RADIUS: PositiveIntAsString.optional().transform((val) => toNumber(val, 48)),
+    MINIMUM_DISTANCE: PositiveIntAsString.optional().transform((val) => toNumber(val, 128)),
+    GROUP_RADIUS: PositiveIntAsString.optional().transform((val) => toNumber(val, 128)),
     ADMIN_API_URL: AbsoluteOrRelativeUrl.optional().transform(emptyStringToUndefined),
     ADMIN_API_TOKEN: z.string().optional().transform(emptyStringToUndefined),
     CPU_OVERHEAT_THRESHOLD: PositiveIntAsString.optional().transform((val) => toNumber(val, 80)),
