@@ -103,8 +103,8 @@ export class GameRoom implements BrothersFinder {
     ) {
         // A zone is 10 sprites wide.
         this.positionNotifier = new PositionNotifier(
-            320,
-            320,
+            640,
+            640,
             onEnters,
             onMoves,
             onLeaves,
